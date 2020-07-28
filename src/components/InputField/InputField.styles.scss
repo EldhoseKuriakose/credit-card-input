@@ -1,0 +1,36 @@
+.input-container {
+    width: 70px;
+    height: 35px;
+
+    .input-field {
+        width: 100%;
+        height: 100%;
+        padding-left: 10px;
+        outline: none;
+        border: 1px solid black;
+        border-radius: 5px 5px 5px 5px;
+
+        &.name-input {
+            width: 420px;
+            margin-left: 35px;
+        }
+
+        &.expiry-cvv-input {
+            margin-top: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .input-container {
+        width: 50px;
+        height: 25px;
+
+        .input-field {
+            &.name-input {
+                width: 270px;
+                margin-left: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,67 @@
+.credit-card-page {
+    width: 500px;
+    height: 500px;
+    background-color: #4d4d4d;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+
+    .label {
+        color: white;
+        padding-left: 30px;
+        font-size: 22px;
+        margin-right: 10px;
+    }
+
+    .input-boxes-container {
+        display: flex;
+        flex-direction: row;
+        width: 420px;
+        margin-left: 35px;
+        justify-content: space-between;
+    }
+
+    .expiry-cvv-container {
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+    }
+
+    .pay-now {
+        width: 90px;
+        height: 40px;
+        margin: auto;
+        border: none;
+        color: white;
+        background-color: #4285f4;
+
+        &:hover {
+            background-color: #357ae8;
+            cursor: pointer;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .credit-card-page {
+        width: 100vw;
+        height: 100vh;
+        padding: 20px 0px;
+
+        .label {
+            padding-left: 20px;
+        }
+
+        .input-boxes-container {
+            width: 270px;
+            margin-left: 20px;
+        }
+
+        .expiry-cvv-container {
+            margin-left: 0px;
+        }
+    }
+}
